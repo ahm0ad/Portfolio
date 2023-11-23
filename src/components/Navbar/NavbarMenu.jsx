@@ -9,9 +9,9 @@ const NavbarMenu = () => {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-black">
           <Container fluid>
-            <Navbar.Brand href="#"><img src={Logo} className="w-100" alt="Logo"/></Navbar.Brand>
+            <Navbar.Brand href="#"><img src={Logo} className="w-50 rounded-circle" alt="Logo"/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -23,12 +23,13 @@ const NavbarMenu = () => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Projecte</Nav.Link>
-                  <Nav.Link href="#action2">Skills</Nav.Link>
-                  <Nav.Link href="#action2">Contact</Nav.Link>
+                <Nav className="justify-content-center flex-grow-1 pe-3">
+                  <Nav.Link href="#action1" className=" text-warning-emphasis fs-4 p-5">Home</Nav.Link>
+                  <Nav.Link href="#action2" className=" text-warning-emphasis fs-4 p-5">Projecte</Nav.Link>
+                  <Nav.Link href="#action2" className=" text-warning-emphasis fs-4 p-5">Skills</Nav.Link>
+                  <Nav.Link href="#action2" className=" text-warning-emphasis fs-4 p-5">Contact</Nav.Link>
                   <NavDropdown
+                    className=" text-warning-emphasis fs-4 p-5"
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
