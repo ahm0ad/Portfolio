@@ -61,9 +61,8 @@ nav {
     width: 0;
     height: 2px;
     background: var(--secondaryColor);
-    transition: width .3s;
+    transition: width .3s .1s;
 }
-
 .navLink:hover::after {
     width: 100%;
     transition: width .3s;
