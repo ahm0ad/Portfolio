@@ -4,7 +4,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className=" w-100" style={{ height: '100vh', backgroundColor: 'black'}}>
+    <div className="home">
         Home
     </div>
   )

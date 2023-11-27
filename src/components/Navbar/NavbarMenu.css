@@ -6,16 +6,13 @@
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 }
-
 :root {
 	--mainColor: #29335c;
     --mainColorLight: #5767aa;
     /* --secondaryColor: #db2b39; */
 	--secondaryColor: #FFDE5A;
     --textColor: #ffffff;
-
 }
-
 header {
 	display: flex;
 	align-items: center;
@@ -25,17 +22,15 @@ header {
 	background-color: var(--mainColor);
 	color: var(--textColor);
 }
-
-nav a {
+nav .navLink {
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
 }
 
-nav a:hover {
+nav .navLink:hover {
 	color: var(--secondaryColor);
 }
-
 header .nav-btn {
 	padding: 5px;
 	cursor: pointer;
@@ -56,9 +51,25 @@ nav {
 
 .logo{
     width: 150px;
-    margin-top: 100px;
+    margin-top: 130px;
     border: 5px solid var(--mainColorLight);
 }
+
+.navLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--secondaryColor);
+    transition: width .3s;
+}
+
+.navLink:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {

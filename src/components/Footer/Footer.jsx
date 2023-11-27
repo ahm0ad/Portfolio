@@ -3,8 +3,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className='b-0'>
-      Footer
+    <div className='footer'>
+      © 2023 code2go
     </div>
   );
 }

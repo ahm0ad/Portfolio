@@ -1,7 +1,7 @@
 import "./NavbarMenu.css";
 import { useRef } from 'react'
 import { Link} from "react-router-dom";
-import Logo from "../Images/code2go2.png";
+import Logo from "../../Images/code2go_cercle.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 
@@ -16,12 +16,13 @@ const NavbarMenu = () => {
 
   return (
 		<header>
-			<img src={Logo} alt="logo" className="rounded-circle logo"/>
+			
+				<img src={Logo} alt="logo" className="rounded-circle logo"/>
+			
 			<nav ref={navRef}>
-				<Link href="/#">Home</Link>
-				<Link href="/#">Projects</Link>
-				<Link href="/#">Tools</Link>
-        <Link href="/#">Portfolio</Link>
+				<Link href="/#" className="navLink">Home</Link>
+				<Link href="/#" className="navLink">Tools</Link>
+				<Link href="/#" className="navLink">Contact me</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
