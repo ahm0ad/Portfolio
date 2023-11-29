@@ -1,3 +1,21 @@
 .home {
-    
+    margin-top: 150px;
+    text-align: center;
 }
+
+.falling-text {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .falling-text span {
+    display: inline-block;
+    transform: translateY(-100%);
+    animation: fallDown 0.5s ease forwards;
+  }
+  
+  @keyframes fallDown {
+    to {
+      transform: translateY(0);
+    }
+  }
